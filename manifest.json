@@ -1,0 +1,20 @@
+{
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "browser_action": {},
+
+  "description": "Browser extension that removes distracting elements from youtube pages",
+
+  "manifest_version": 2,
+
+  "name": "YT-helper",
+
+  "permissions": ["tabs", "activeTab", "webNavigation"],
+
+  "version": "0.1"
+}
