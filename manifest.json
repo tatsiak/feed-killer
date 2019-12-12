@@ -1,8 +1,13 @@
 {
+  "name": "YT-helper",
+  "author": "Sergey Tatsiak",
+  "version": "0.2",
+
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "run_at": "document_start"
     }
   ],
 
@@ -10,11 +15,5 @@
 
   "description": "Browser extension that removes distracting elements from youtube pages",
 
-  "manifest_version": 2,
-
-  "name": "YT-helper",
-
-  "permissions": ["tabs", "activeTab", "webNavigation"],
-
-  "version": "0.1"
+  "manifest_version": 2
 }

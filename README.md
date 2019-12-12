@@ -1,4 +1,4 @@
 # yt-helper
-Browser extension that removes distracting elements from youtube pages.
+##### Browser extension that removes distracting elements from youtube pages.
 
-Works on both Firefox and Chrome.
+https://addons.mozilla.org/en-US/firefox/addon/yt-helper/
