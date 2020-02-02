@@ -1,11 +1,11 @@
 {
-  "name": "YT-helper",
+  "name": "Feed-killer",
   "author": "Sergey Tatsiak",
-  "version": "0.2",
+  "version": "0.3",
 
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/*"],
+      "matches": ["*://*.youtube.com/*", "*://*.linkedin.com/*"],
       "js": ["content.js"],
       "run_at": "document_start"
     }
@@ -13,7 +13,7 @@
 
   "browser_action": {},
 
-  "description": "Browser extension that removes distracting elements from youtube pages",
+  "description": "Browser extension that removes distracting elements from social media pages (Youtube™, Linkedin™)",
 
   "manifest_version": 2
 }

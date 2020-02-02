@@ -1,4 +1,4 @@
-const selectors = [
+const youtubeSelectors = [
   'ytd-browse[page-subtype*="home"]', // home page recommended
   "#related", // sidebar recommeded
   "a[href='/feed/trending']", // trending button
@@ -9,11 +9,14 @@ const selectors = [
   ".annotation.annotation-type-custom.iv-branding" // end of video - more channel links
 ];
 
+const linkedinSelectors = ["div.core-rail"];
+
 let lastObserveTime = 0;
 
 const handler = () => {
   if (new Date() - lastObserveTime > 300) {
     lastObserveTime = new Date();
+    const selectors = youtubeSelectors.concat(linkedinSelectors);
     const elements = document.querySelectorAll(selectors.join(", "));
     elements.forEach(element => {
       element.setAttribute("style", "display: none;");
