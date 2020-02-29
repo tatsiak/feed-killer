@@ -15,6 +15,10 @@ let lastObserveTime = 0;
 
 const handler = () => {
   if (new Date() - lastObserveTime > 300) {
+    if (document.location.href === "https://www.linkedin.com/mynetwork/") {
+      return;
+    }
+
     lastObserveTime = new Date();
     const selectors = youtubeSelectors.concat(linkedinSelectors);
     const elements = document.querySelectorAll(selectors.join(", "));
