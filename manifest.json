@@ -1,7 +1,7 @@
 {
   "name": "Feed-killer",
   "author": "Sergey Tatsiak",
-  "version": "0.3",
+  "version": "0.4",
 
   "content_scripts": [
     {
