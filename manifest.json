@@ -1,11 +1,12 @@
 {
   "name": "Feed-killer",
-  "author": "Sergey Tatsiak",
-  "version": "0.4",
+  "author": "Serhii Tatsiak",
+  "version": "0.5",
 
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/*", "*://*.linkedin.com/*"],
+      "matches": ["*://*.youtube.com/*"],
+      "css": ["style.css"],
       "js": ["content.js"],
       "run_at": "document_start"
     }
@@ -13,7 +14,7 @@
 
   "browser_action": {},
 
-  "description": "Browser extension that removes distracting elements from social media pages (Youtube™, Linkedin™)",
+  "description": "Browser extension that removes distracting elements from Youtube™",
 
   "manifest_version": 2
 }
